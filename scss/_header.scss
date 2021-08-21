@@ -1,0 +1,114 @@
+.header{
+    &__nav{
+        display: flex;
+        align-items: center;    
+    }
+    &__list{
+        list-style-type: none;
+        display: flex;
+    }
+    &__item{
+        margin-right: 40px;
+    }
+    &__item:nth-child(3){
+        margin-right: 0;
+    }
+    &__link{
+        text-decoration: none;
+        color: #939CAA;
+    }
+    &__link:hover{
+        color: #FCB72B;
+    }
+    &__btn{
+        text-decoration: none;
+        color: #fff;
+        margin-left: auto;
+        background-color: #FCB72B;
+        border: 3px solid #FCB72B;
+        padding: 18px 35px;
+    }
+    &__btn:hover{
+        border: 3px solid #FCB72B;
+        background-color: transparent;
+        color: #FCB72B;
+    }
+    &__bar{
+        display: none;
+        color: #FCB72B;
+        margin-right: auto;
+    }
+    &__checkbox{
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+}
+
+@media (max-width: 720px){
+    .header__btn{
+        font-size: 12px;
+    }
+}
+@media (max-width: 620px){
+    .header{
+        &__logo{
+            padding: 20px 200px;
+        }
+        &__bar{
+            margin-right: auto;
+            position: relative;
+            right: 500px;
+        }
+        &__btn{
+            display: none;
+        }
+        &__list{
+            text-align: right;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 60px;
+            display: none;
+        }
+        &__item{
+            margin: 0;
+            padding: 15px 25px;
+        }
+        &__bar{
+            display: block;
+        }
+        &__checkbox:checked + &__list{
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 520px){
+    .header{
+        &__bar{
+            position: absolute;
+            top: 23px;
+            left: 70px;
+        }
+        &__logo{
+            padding: 20px 150px;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .header{
+        &__bar{
+            left: 30px;
+        }
+        &__logo{
+            padding: 20px 130px;
+        }
+    }
+}

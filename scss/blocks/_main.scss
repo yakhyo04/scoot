@@ -1,0 +1,239 @@
+.main{
+    background-image: url(/img/scooter-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 100%;
+    width: 100%;
+    &__nav{
+        padding: 60px;
+    }
+    &__div{
+        padding-left: 100px;
+    }
+    &__div::before{
+        content: url(/img/yellow-line.png);
+        position: relative;
+        top: 115px;
+        right: 274px;
+    }
+    &__div::after{
+        content: url(/img/yellow-line-2.png);
+        position: absolute;
+        top: 415px;
+        left: 670px;
+    }
+    &__heading{
+        width: 500px;
+        height: 112px;
+        font-size: 46px;
+        color: #fff;
+    }
+    &__text{
+        width: 405px;
+        height: 100px;
+        line-height: 30px;
+        margin-bottom: 120px;
+        color: #fff;
+    }
+    &__text::after{
+        content: url(/img/three-circle.png);
+        position: absolute;
+        right: 0;
+        top: 490px;
+    }
+    &__btn{
+        text-decoration: none;
+        background-color: #FCB72B;
+        color: #fff;
+        padding: 20px 40px;
+    }
+    &__btn:hover{
+        background-color: transparent;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .main{
+        &__nav{
+            padding: 10px;
+            padding-bottom: 70px;
+        }
+        &__div{
+            padding-left: 90px;
+        }
+        &__div::before{
+            position: relative;
+            top: 60px;
+            right: 220px;
+        }
+        &__div::after{
+            top: 370px;
+            left: 500px;
+        }
+        &__text::after{
+            top: 440px;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .main{
+        background-size: 1100px 1000px;
+        &__div::before{
+            top: 140px;
+        }
+        &__div::after{
+            background-image: url(/img/yellow-line-2.png);
+            background-repeat: no-repeat;
+            background-size: 340px;
+            width: 340px;
+            height: 300px;
+            left: 550px;
+            top: 390px;
+            content: '';
+        }
+    }
+}
+
+@media (max-width: 1020px){
+    .main{
+        &__div{
+            padding-left: 40px;
+        }
+        &__div::after{
+            left: 505px;
+            background-size: 320px;
+        }
+    }
+}
+
+@media (max-width: 920px){
+    .main{
+        &__nav{
+            padding: 25px 0;
+        }
+        &__div{
+            padding: 0;
+        }
+        &__div::before{
+            display: none;
+        }
+        &__text::after{
+            top: 400px;
+        }
+        &__div::after{
+            top: 360px;
+            left: 400px;
+        }
+    }
+}
+
+@media (max-width: 820px){
+    .main{
+        background-image: url(/img/tabletbg.jpg);
+        background-size: 100%;
+        &__heading{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__text::after{
+            display: none;
+        }
+        &__nav{
+            justify-content: center;
+            padding: 30px 130px 200px 130px;
+        }
+        &__div{
+            padding: 0 50px;
+        }
+        &__div::after{
+            left: 0;
+            top: 500px;
+            background-size: 100%;
+        }
+        &__btn{
+            margin-left: 120px;
+        }
+    }
+}
+
+@media (max-width: 720px){
+    .main{
+        background-size: 800px;
+        &__nav{
+            padding: 40px;
+        }
+        &__div{
+            padding-bottom: 130px;
+        }
+    }
+}
+@media (max-width: 620px){
+    .main{
+        background-size: 650px;
+        &__nav{
+            padding: 0;
+        }
+        &__div::after{
+            top: 500px;
+        }
+    }
+}
+@media (max-width: 520px){
+    .main{
+        background-image: url(/img/mobile-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        &__heading{
+            width: auto;
+            font-size: 40px;
+            padding: 0;
+            margin: 0;
+        }
+        &__nav{
+            margin: 0;
+            padding: 160px 10px;
+        }
+        &__div{
+            padding: 0;
+        }
+        &__div::after{
+            top: 600px;
+            background-position-x: -210px;
+        }
+        &__text{
+            width: 380px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media (max-width: 420px){
+    .main{
+        &__nav{
+            padding: 100px 30px;
+        }
+        &__btn{
+            margin: 0;
+            margin-left: 60px;
+        }
+        &__heading{
+            width: 311px;
+        }
+        &__text{
+            width: 311px;
+        }
+        &__div{
+            padding: 100px 0;
+        }
+        &__div::after{
+            top: 650px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.section{
+    background-image: url(/img/section-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &__list{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 65px 0;
+    }
+    &__heading{
+        width: 400px;
+        color: #fff;
+        font-size: 39px;
+        font-weight: bold;
+    }
+    &__icons{
+        padding-top: 40px;
+    }
+}
+
+
+
+@media (max-width: 1100px){
+    .section{
+        margin-top: 100px;
+        background-size: 1100px 300px;
+    }
+}
+
+@media (max-width: 820px){
+    .section{
+        background-image: url(/img/Mask.png);
+        background-repeat: no-repeat;
+        background-size: 100% 500px;
+        &__list{
+            flex-direction: column;
+            padding-left: 190px;
+            text-align: center;
+        }
+        &__icons{
+            padding-right: 170px;
+        }
+    }
+}
+
+@media (max-width: 720px){
+    .section{
+        &__list{
+            padding-left: 90px;
+        }
+        &__icons{
+            padding-right: 90px;
+        }
+    }
+}
+
+
+@media (max-width: 620px){
+    .section{
+        &__list{
+            padding-left: 50px;
+        }
+        &__icons{
+            padding-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 520px){
+    .section{
+        background-image: url(/img/mobilebg.png);
+        &__heading{
+            font-size: 32px;
+        }
+        &__list{
+            padding-left: 0;
+        }
+        &__icons{
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .section__icon{
+        width: 113px;
+        height: 40px;
+    }
+}
