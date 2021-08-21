@@ -61,6 +61,7 @@
 }
 @media (max-width: 620px){
     .header{
+        position: unset;
         &__logo{
             padding: 20px 200px;
         }

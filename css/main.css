@@ -987,6 +987,9 @@ svg:hover {
 }
 
 @media (max-width: 620px) {
+  .header {
+    position: unset;
+  }
   .header__logo {
     padding: 20px 200px;
   }
