@@ -880,6 +880,14 @@ svg:hover {
   }
 }
 
+.header {
+  background-color: #fff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;

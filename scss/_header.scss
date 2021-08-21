@@ -1,7 +1,12 @@
 .header{
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
     &__nav{
         display: flex;
-        align-items: center;    
+        align-items: center;
     }
     &__list{
         list-style-type: none;
