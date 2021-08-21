@@ -77,6 +77,9 @@
         &__text::after{
             top: 440px;
         }
+        &__heading{
+            padding-top: 30px;
+        }
     }
 }
 @media (max-width: 1100px){
@@ -106,6 +109,9 @@
         &__div::after{
             left: 505px;
             background-size: 320px;
+        }
+        &__heading{
+            padding-top: 30px;
         }
     }
 }
@@ -181,6 +187,9 @@
         }
         &__div::after{
             top: 500px;
+        }
+        &__heading{
+            padding-top: 50px;
         }
     }
 }
